@@ -1,0 +1,19 @@
+2020-03-20 04:19:56 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Oracle\Driver\Oracle cannot be used due to a missing PHP extension or unmet dependency in C:\xampp\htdocs\portal_pjud\vendor\cakephp\cakephp\src\Database\Connection.php on line 179
+Exception Attributes: array (
+  'driver' => 'Cake\\Oracle\\Driver\\Oracle',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\portal_pjud\vendor\cakephp\cakephp\src\Database\Connection.php(120): Cake\Database\Connection->setDriver(Object(Cake\Oracle\Driver\Oracle), Array)
+#1 C:\xampp\htdocs\portal_pjud\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php(89): Cake\Database\Connection->__construct(Array)
+#2 C:\xampp\htdocs\portal_pjud\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(97): Cake\Datasource\ConnectionRegistry->_create('Cake\\Database\\C...', 'default', Array)
+#3 C:\xampp\htdocs\portal_pjud\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php(205): Cake\Core\ObjectRegistry->load('Cake\\Database\\C...', Array)
+#4 C:\xampp\htdocs\portal_pjud\vendor\cakephp\debug_kit\src\Panel\SqlLogPanel.php(50): Cake\Datasource\ConnectionManager::get('default')
+#5 C:\xampp\htdocs\portal_pjud\vendor\cakephp\debug_kit\src\ToolbarService.php(196): DebugKit\Panel\SqlLogPanel->initialize()
+#6 C:\xampp\htdocs\portal_pjud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): DebugKit\ToolbarService->initializePanels()
+#7 C:\xampp\htdocs\portal_pjud\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\portal_pjud\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\portal_pjud\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\portal_pjud\webroot\index.php(40): Cake\Http\Server->run()
+#11 {main}
+
+
